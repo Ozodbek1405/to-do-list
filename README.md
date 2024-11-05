@@ -32,20 +32,20 @@ Dastur foydalanuvchilar uchun sodda va samarali vazifalar ro'yxatini yaratish, k
 1. Loyihani yuklab oling:
 
     ```bash
-    git clone https://github.com/username/your-todo-repo.git
-    cd your-todo-repo
+    git clone https://github.com/Ozodbek1405/to-do-list.git
+    cd to-do-list
     ```
 
-2. Composer kutubxonalarini o'rnating:
+2. Dockerni ishga tushuring:
 
     ```bash
-    composer install
+    docker-compose up -d
     ```
 
 3. `.env` faylini sozlang:
 
     ```bash
-    cp .env.example .env
+    copy .env.example .env
     php artisan key:generate
     ```
 
@@ -53,16 +53,13 @@ Dastur foydalanuvchilar uchun sodda va samarali vazifalar ro'yxatini yaratish, k
 
     ```bash
     npm install
+    npm install vue@latest
+    npm install @vitejs/plugin-vue
+    npm install --save-dev laravel-vite-plugin
     npm run dev
     ```
 
-5. Serverni ishga tushiring:
-
-    ```bash
-    php artisan serve
-    ```
-
-6. Dasturni `http://localhost:8000` orqali kiriting.
+6. Dasturni `http://localhost:8081` orqali kiriting.
 
 ## Foydalanish
 
@@ -76,20 +73,3 @@ Dastur foydalanuvchilar uchun sodda va samarali vazifalar ro'yxatini yaratish, k
 - `app/Http/Controllers/ToDoController.php`: ToDo ro'yxati uchun asosiy mantiq.
 - `resources/views/`: Blade shablonlari.
 - `resources/js/components/`: Vue.js komponentlari.
-
-## Kelgusidagi Yaxshilanishlar
-
-- Ma'lumotlarni saqlash uchun ma'lumotlar bazasini qo'llab-quvvatlash.
-- Foydalanuvchilarni autentifikatsiya qilish.
-- Vazifalarni holatiga qarab saralash va filtrlashtirish.
-
-## Aloqa
-
-Agar biror savol yoki takliflaringiz bo'lsa, quyidagi manzil orqali bog'lanishingiz mumkin:
-
-- Email: support@example.com
-- Telegram: [@yourusername](https://t.me/yourusername)
-
-## Litsenziya
-
-Ushbu loyiha MIT litsenziyasi ostida tarqatilgan.
