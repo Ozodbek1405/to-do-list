@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{trans('translation.about')}}</title>
+    <title>@lang('translation.about')</title>
 </head>
 <body>
 <div class="container">
-        <h1>ToDo List Dasturi</h1>
+        <h1>@lang('translation.todo_list_program')</h1>
 
         <h2>Kirish</h2>
         <p>
