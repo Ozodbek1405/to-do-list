@@ -1,17 +1,5 @@
 <template>
     <div class="container mt-5">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/readme">Readme</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
         <h1 class="text-center mb-4">ToDo List</h1>
         <form @submit.prevent="addTodo" class="mb-4">
             <div class="input-group">
